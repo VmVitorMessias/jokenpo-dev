@@ -1,0 +1,91 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(62, 100%, 50%);
+    --title-color: hsl(0, 0%, 0%);
+    --body-color: hsl(267, 14%, 85%);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Montserrat", sans-serif;
+    --biggest-font-size: 2rem;
+    --normal-font-size: 1rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-bold: 700;
+}
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/*=============== MAIN ===============*/
+.main {
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid var(--title-color);
+    padding: 1rem;
+}
+
+/*=============== JOKENPÔ GAME ===============*/
+.jokenpo {
+    margin-top: .700rem;
+    text-align: center;
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+}
+
+.emoji__button {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.emoji {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--first-color);
+    border: 1px solid var(--title-color);
+    display: grid;
+    place-items: center;
+    background-color: var(--title-color);
+}
+
+.emoji:hover {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    row-gap: 1rem;
+}
+
+.score__result {
+    text-align: center;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
